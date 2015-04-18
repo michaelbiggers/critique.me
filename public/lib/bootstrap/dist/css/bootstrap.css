@@ -1095,7 +1095,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #000;
-  background-color: black;
+  background-color: white;
 }
 input,
 button,
@@ -6632,8 +6632,20 @@ div.container4 p {
     height: 100%;
 }
 .intro-text {
-  padding-bottom:100px;
+  padding-bottom:3em;
   color:white;
+}
+#explore {
+  margin-top:4em;
+  margin-bottom:4em;
+  padding:1em;
+  background-color:#0fb264;
+  color:white;
+  border:none;
+  border-radius:.5em;
+}
+#explore:hover {
+  background-color:#037a41;
 }
 #footer {
  
