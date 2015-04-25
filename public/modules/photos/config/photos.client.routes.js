@@ -21,5 +21,6 @@ angular.module('photos').config(['$stateProvider',
 			url: '/photos/:photoId/edit',
 			templateUrl: 'modules/photos/views/edit-photo.client.view.html'
 		});
+		
 	}
 ]);

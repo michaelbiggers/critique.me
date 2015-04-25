@@ -1,42 +1,14 @@
-<section data-ng-controller="HomeController">
+<section data-ng-controller="PhotosController" data-ng-init="find()">
 	<div class = "row text-center">
 		<h2>Recent Uploads</h2>
 	</div>
+
 	<div class ="row">
-		<div class = "col-xs-6 col-md-3">
-			<a href = "#" class = "thumbnail">
-				<img src="http://placehold.it/171x180">
+		<div ng-repeat="photo in photos" class="col-xs-6 col-md-3">
+			<a data-ng-href ="#!/photos/{{photo._id}}">
+				<img ng-src = "{{photo.image}}" class = "thumbnail img-responsive">
 			</a>
-		</div>
-		<div class = "col-xs-6 col-md-3">
-			<a href = "#" class = "thumbnail">
-				<img src="http://placehold.it/171x180">
-			</a>
-		</div>
-		<div class = "col-xs-6 col-md-3">
-			<a href = "#" class = "thumbnail">
-				<img src="http://placehold.it/171x180">
-			</a>
-		</div>
-		<div class = "col-xs-6 col-md-3">
-			<a href = "#" class = "thumbnail">
-				<img src="http://placehold.it/171x180">
-			</a>
-		</div>
-		<div class = "col-xs-6 col-md-3">
-			<a href = "#" class = "thumbnail">
-				<img src="http://placehold.it/171x180">
-			</a>
-		</div>
-		<div class = "col-xs-6 col-md-3">
-			<a href = "#" class = "thumbnail">
-				<img src="http://placehold.it/171x180">
-			</a>
-		</div>
-		<div class = "col-xs-6 col-md-3">
-			<a href = "#" class = "thumbnail">
-				<img src="http://placehold.it/171x180">
-			</a>
+			<h4>{{photo.name}}</h4>
 		</div>
 	</div>
 	
