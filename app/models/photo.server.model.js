@@ -32,10 +32,21 @@ var PhotoSchema = new Schema({
 		type: Number,
 		default: 0
 	},
+	description: {
+		type:String,
+		default:'default description'
+	},
 	likes: [{
 	  type: Schema.ObjectId,
           ref: 'User'
 	}]
 });
 
+var CommentSchema = new Schema({
+    user : ref: 'User',
+    content  : String,
+    created  : Date
+});
+
 mongoose.model('Photo', PhotoSchema);
+mongoose.model('Comment', CommentSchema);

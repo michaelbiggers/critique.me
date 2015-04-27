@@ -5,6 +5,9 @@
 	<div class="page-body">
 			<image ng-src="{{photo.image}}" style ="max-width:100%" />
 	</div>
+	<div>
+		<p >{{photo.description}}</p>
+	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == photo.user._id))">
 		<a class="btn btn-primary" href="/#!/photos/{{photo._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>
@@ -34,6 +37,18 @@
 			
 		</h2>
 		</div>
-		
-	</div>
+	<!--<form ng-submit="addComment()"
+    	style="margin-top:30px;">
+    	<h3>Add a new comment</h3>
+
+    	<div class="form-group">
+      		<input type="text"
+      			class="form-control"
+  				placeholder="Comment"
+      			ng-model="body"></input>
+		</div>
+    	<button type="submit" class="btn btn-primary">Post</button>
+  	</form>-->
+
+
 </section>

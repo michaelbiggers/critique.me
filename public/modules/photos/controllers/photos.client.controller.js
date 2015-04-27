@@ -11,7 +11,8 @@ angular.module('photos').controller('PhotosController', ['$scope', '$stateParams
 	  $scope.create = function() {
 	    // Create new Photo object
 	    var photo = new Photos ({
-	      name: this.name
+	      name: this.name,
+	      description: this.description
 	    });
 	    photo.$save(function(response) {
 	      $location.path('photos/' + response._id);
@@ -91,5 +92,7 @@ angular.module('photos').controller('PhotosController', ['$scope', '$stateParams
               $scope.isLiked=true;
 	    });
 
-         };   
+         };
+
+
         }]);

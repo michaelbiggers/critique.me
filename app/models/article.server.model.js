@@ -5,6 +5,14 @@
  */
 var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
+/*
+var mongoose = require('mongoose'),
+	Schema = mongoose.Schema;
+var ui-comments = require('ui-comments')
+
+var CommentSchema = new Schema({
+	//////
+});*/
 
 /**
  * Article Schema
