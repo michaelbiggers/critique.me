@@ -11,6 +11,11 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		state('home', {
 			url: '/',
 			templateUrl: 'modules/core/views/home.client.view.html'
+		}).
+		state('imagefeed', {
+			url: '/feed',
+			templateUrl: 'modules/core/views/imagefeed.client.view.html'
 		});
 	}
 ]);
+

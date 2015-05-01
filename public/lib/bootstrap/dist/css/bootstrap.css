@@ -1095,7 +1095,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #000;
-  background-color: black;
+  background-color: #fff;
 }
 input,
 button,
@@ -6651,6 +6651,13 @@ div.container4 p {
   line-height:.5em;
   color:#333;
 
+}
+
+#explore{
+  background-color: #037A41;
+  border-style: none;
+  height: 3em;
+  border-radius: .5em;
 }
 
 
