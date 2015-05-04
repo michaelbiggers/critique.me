@@ -1,2 +1,1 @@
-# mean_flickr
-A mean framework implementation of uploading photos &amp; liking them
+# The application that makes criticism that much easier. 
