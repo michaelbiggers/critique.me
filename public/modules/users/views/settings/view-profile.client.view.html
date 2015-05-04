@@ -4,7 +4,7 @@
 		
 		<div class = "row">
 				<p class="lead text-center" style="color:black;">You are <span class ="accentColor">{{user.displayName}}</span>. The email address you gave us is <span class ="accentColor">{{user.email}}</span>. Here you're known by the name <span class ="accentColor">{{user.username}}</span>. This is what you've told us about yourself - <br /><br />
-					<em>{{user.userDescription}}</em></p>
+					<em editable-text ="user.userDescription" >{{user.userDescription || "empty"}}</em></p>
 					
 				
 		</div>
