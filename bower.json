@@ -11,6 +11,9 @@
     "angular-bootstrap": "~0.12.0",
     "angular-ui-utils": "~0.1.1",
     "angular-ui-router": "~0.2.11",
-    "bootstrap-sass-official": "~3.3.4"
+    "bootstrap-sass-official": "~3.3.4",
+    "angucomplete": "*",
+    "angular-elastic": "~2.4.2",
+    "angular-loading-bar": "~0.7.1"
   }
 }

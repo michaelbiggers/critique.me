@@ -1,105 +1,28 @@
 <section data-ng-controller="PhotosController" data-ng-init="find()" >
 <div class="row text-center">
-	<h2>Recent Works</h2>
+	<h2>Recent Uploads</h2>
 </div>
 
 <br>
-
 			<div class="row">
-  <div  ng-repeat="photo in photos" class="col-xs-6 col-md-3">
-    <a data-ng-href="#!/photos/{{photo._id}}"  class="thumbnail">
-      <image src="{{photo.image}}"  />
-    </a>
-  </div>
-
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
+        <div  ng-repeat="photo in photos" class="col-xs-6 col-md-3">
+          <a data-ng-href="#!/photos/{{photo._id}}"  class="thumbnail">
+            <image src="{{photo.image}}"  />
+          </a>
+        </div>
+      </div>
+<div class="row text-center">
+  <h2>Most Popular</h2>
 </div>
+      <div class="row">
+        <div  ng-repeat="photo in photos | orderBy: '-upvotes'" class="col-xs-6 col-md-3">
+          <a data-ng-href="#!/photos/{{photo._id}}"  class="thumbnail">
+            <image src="{{photo.image}}"  />
+          </a>
+        </div>
+      </div>
 
-<div class="row">
-	<div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-</div>
-	<br>
-	<br>	
-	<div class="row">
-		<div class="row text-center">
-			<h2>Users</h2>
-		</div>
-
-		<br>
-		<br>
-
-		<div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="http://placehold.it/171x180" alt="...">
-    </a>
-  </div>
-
-	</div>
-
-		<br>
-		<div class="row">
-			<p class="lead">
-
-				WE MADE A PAGE HERE!!
-			</p>
-		</div>
-
-	</div>
-	
-	<div class="row">
+		
 
 	</div>
 

@@ -29,6 +29,7 @@ exports.create = function(req, res) {
       });
     } else {
       res.redirect('/#!/photos/'+photo._id); // redirection to '/'jsonp(photo);
+      
     }
   });
 };

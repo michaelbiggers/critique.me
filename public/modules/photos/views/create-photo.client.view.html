@@ -2,7 +2,7 @@
     <div class="page-header">
         <h1>New Photo</h1>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-4">
         <form class="form-horizontal" action="photos/" method="post" enctype="multipart/form-data" novalidate>
             <fieldset>
                 <div class="form-group">
@@ -11,6 +11,18 @@
                         <input type="text" name="name" class="form-control" placeholder="Name" required>
                     </div>
                 </div>
+                
+                <div class = "form-group">
+                    <label class = "control-label" for="country">What country are you from?</label>
+                        <div class="padded-row">
+                            <angucomplete id="ex1" placeholder="Search countries" pause="100" selectedobject="selectedCountry" localdata="countries" searchfields="name" titlefield="name" minlength="1" inputclass="form-control form-control-small" matchclass="highlight" />
+                        </div>
+                        <div class="" ng-show="selectedCountry">
+                            You selected <span class="bold-span">{{selectedCountry.originalObject.name}}</span> which has a country code of <span class="bold-span">{{selectedCountry.originalObject.code}}</span>
+                        </div>
+                </div>
+                       
+                        
         <input type="file" name="image" data-ng-model="imageHolder.image" id="image" accept="image/*" required/><br/>
 
                 <div class="form-group">
@@ -23,4 +35,8 @@
             </fieldset>
         </form>
     </div>
+    <div class = "col-md-4">
+
+    </div>
 </section>
+           
