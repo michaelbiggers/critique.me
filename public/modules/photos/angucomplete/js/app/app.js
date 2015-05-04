@@ -1,1 +1,0 @@
-var appA = angular.module('appA', ["ngTouch", "angucomplete"]);

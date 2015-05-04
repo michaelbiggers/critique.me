@@ -54,6 +54,10 @@ var UserSchema = new Schema({
 		required: 'Please fill in a username',
 		trim: true
 	},
+	userDescription: {
+		type: String,
+		default: "This user hasn't entered any description yet!"
+	},
 	password: {
 		type: String,
 		default: '',

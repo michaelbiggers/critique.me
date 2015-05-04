@@ -13,7 +13,7 @@ html {
 }
 html,body {
   height:100%;
-  margin-bottom:60px;
+  margin-bottom:600px;
 }
 body {
   margin: 0;
@@ -3890,6 +3890,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li {
   position: relative;
   display: block;
+
 }
 .nav > li > a {
   position: relative;
@@ -6656,8 +6657,14 @@ div.container4 p {
 #explore{
   background-color: #037A41;
   border-style: none;
-  height: 3em;
+  font-size:1.3em; ;
   border-radius: .5em;
+  color:#afafaf;
+  padding:1.3em;
+}
+#explore:hover {
+  background-color: #30A16B;
+  color:white;
 }
 
 
